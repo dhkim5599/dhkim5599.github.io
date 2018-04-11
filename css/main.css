@@ -319,7 +319,7 @@ textarea {
     position: absolute;
     right: 0;
     left: 10px;
-    bottom: -200px;
+    bottom: -190px;
     border-width: 0;
     background: black;
     width: 5px;
@@ -484,7 +484,7 @@ textarea {
     position: absolute;
     right: 0;
     left: 110px;
-    bottom: -272px;
+    bottom: -236px;
     border-width: 0;
     background: red;
     width: 5px;
@@ -493,6 +493,54 @@ textarea {
     -moz-transform: rotate(-30deg);
     -ms-transform: rotate(-30deg);
     -o-transform: rotate(-30deg);
+}
+.exo .container-deg36::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 140px;
+    bottom: -118px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 15.08em;
+    -webkit-transform: rotate(-56deg);
+    -moz-transform: rotate(-56deg);
+    -ms-transform: rotate(-56deg);
+    -o-transform: rotate(-56deg);
+}
+.exo .container-deg108::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: -5px;
+    bottom: -200px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 18.08em;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+}
+.exo .container-deg324::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 125px;
+    bottom: 10px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 17.08em;
+    -webkit-transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
+    -o-transform: rotate(55deg);
 }
 .exo .small.deg72 {
     transform: rotate(72deg) translate(311px) rotate(-72deg);
