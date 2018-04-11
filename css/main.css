@@ -1,0 +1,769 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Verdana", "Arial", sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+p {
+    margin: 0;
+}
+a {
+    color: black;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.gate-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(70%);
+    text-align: center;
+}
+.navigation {
+    font-size: 36px;
+}
+.goback{
+    margin: 20px;
+}
+.legend, .name {
+    margin: 30px 0 0 30px;
+}
+.current-page {
+    font-weight: bold;
+}
+/* Microsystem style */
+.circle-continer {
+    text-align: center;
+    position: relative;
+    width: 35em;
+    height: 35em;
+    padding: 2.8em;
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border-radius: 50%;
+    margin: 0 auto 0;
+}
+
+.circle-subcontiner {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 6em; 
+    margin: -2em;
+}
+
+.deg0 { 
+    transform: translate(17.5em); 
+} 
+.deg36 { 
+    transform: rotate(36deg) translate(17.5em) rotate(-36deg); 
+}
+.deg72 { 
+    transform: rotate(72deg) translate(17.5em) rotate(-72deg); 
+}
+.deg108 { 
+    transform: rotate(108deg) translate(17.5em) rotate(-108deg); 
+}
+.deg144 { 
+    transform: rotate(144deg) translate(17.5em) rotate(-144deg); 
+}
+.deg180 { 
+    transform: rotate(180deg) translate(17.5em) rotate(-180deg); 
+}
+.deg216 { 
+    transform: rotate(216deg) translate(17.5em) rotate(-216deg); 
+}
+.deg252 { 
+    transform: rotate(252deg) translate(17.5em) rotate(-252deg); 
+}
+.deg288 { 
+    transform: rotate(288deg) translate(17.5em) rotate(-288deg); 
+}
+.deg324 { 
+    transform: rotate(324deg) translate(17.5em) rotate(-324deg); 
+}
+.deg360 { 
+    transform: rotate(360deg) translate(17.5em) rotate(-360deg); 
+}
+.deg252, .deg288 {
+    background: white;
+}
+
+
+.meso .deg36 {
+    transform: rotate(36deg) translate(25.5em) rotate(-36deg);
+}
+.meso .deg72 {
+    transform: rotate(59deg) translate(17.5em) rotate(-59deg);
+}
+.meso .deg108 {
+    transform: rotate(121deg) translate(17.5em) rotate(-121deg);
+}
+.meso .deg144 {
+    transform: rotate(144deg) translate(25.5em) rotate(-144deg);
+}
+.meso .deg180 {
+    transform: rotate(194deg) translate(12.5em) rotate(-194deg);
+}
+.meso .deg216 {
+    transform: rotate(187deg) translate(25.5em) rotate(-187deg);
+}
+.meso .deg324 {
+    transform: rotate(345deg) translate(12.5em) rotate(-345deg);
+}
+.meso .deg360 {
+    transform: rotate(352deg) translate(25.5em) rotate(-352deg);
+}
+
+
+.meso .small.deg36 {
+    transform: rotate(36deg) translate(29em) rotate(-36deg);
+}
+.meso .small.deg72 {
+    transform: rotate(59deg) translate(20em) rotate(-59deg);
+}
+.meso .small.deg108 {
+    transform: rotate(121deg) translate(20em) rotate(-121deg);
+}
+.meso .small.deg144 {
+    transform: rotate(145deg) translate(30em) rotate(-145deg);
+    margin-left: 30px;
+}
+.meso .small.deg180 {
+    transform: rotate(194deg) translate(14em) rotate(-194deg);
+}
+.meso .small.deg216 {
+    transform: rotate(187deg) translate(29em) rotate(-187deg);
+}
+.meso .small.deg324 {
+    transform: rotate(345deg) translate(14em) rotate(-345deg);
+}
+.meso .small.deg360 {
+    transform: rotate(352deg) translate(29em) rotate(-352deg);
+}
+
+.container-meso-deg36.meso::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 290px;
+    bottom: -221px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 127px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.container-meso-deg108.meso::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: -210px;
+    bottom: -221px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 127px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.container-meso-deg180.meso::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: -260px;
+    bottom: 86px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 127px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.container-meso-deg252.meso::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 10px;
+    bottom: 290px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 150px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.container-meso-deg324.meso::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 350px;
+    bottom: 69px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 127px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.container-deg0::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 10px;
+    bottom: -200px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 35.08em;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.container-deg36::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 140px;
+    bottom: -131px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 15.08em;
+    -webkit-transform: rotate(-56deg);
+    -moz-transform: rotate(-56deg);
+    -ms-transform: rotate(-56deg);
+    -o-transform: rotate(-56deg);
+}
+.container-deg72::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 110px;
+    bottom: -222px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 15.08em;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.container-deg108::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0px;
+    bottom: -200px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 15.08em;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.container-deg144::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: -90px;
+    bottom: -161px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 15.08em;
+    -webkit-transform: rotate(56deg);
+    -moz-transform: rotate(56deg);
+    -ms-transform: rotate(56deg);
+    -o-transform: rotate(56deg);
+}
+.container-deg216::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: -50px;
+    bottom: 20px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 17.08em;
+    -webkit-transform: rotate(-55deg);
+    -moz-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+}
+.container-deg252::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: -18px;
+    bottom: 80px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 17.08em;
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    -o-transform: rotate(150deg);
+}
+.container-deg288::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 105px;
+    bottom: 80px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 17.08em;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+.container-deg324::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 125px;
+    bottom: 30px;
+    border-width: 0;
+    background: black;
+    width: 5px;
+    height: 17.08em;
+    -webkit-transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
+    -o-transform: rotate(55deg);
+}
+
+/* Microsystem */
+.micro.container-deg72::before {
+    bottom: -205px;
+}
+.micro.container-deg108::before {
+    bottom: -155px;
+}
+.micro.container-deg252::before {
+    bottom: 90px;
+}
+.micro.container-deg288::before {
+    bottom: 60px;
+}
+/**/
+.exo::before {
+    background: red;
+}
+.exo.container-deg144::before {
+    bottom: -140px;
+}
+.exo.container-deg72::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 110px;
+    bottom: -272px;
+    border-width: 0;
+    background: red;
+    width: 5px;
+    height: 15.08em;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.exo .small.deg72 {
+    transform: rotate(72deg) translate(311px) rotate(-72deg);
+}
+/* Macrosystem */
+.macro::before {
+    background: blue;
+}
+.macro.container-deg0::before {
+    bottom: -190px;
+}
+.macro.container-deg144::before {
+    height: 18.08em;
+}
+.macro.container-deg216::before {
+    height: 17.08em;
+}
+.macro.container-deg324::before {
+    bottom: 9px;
+}
+
+img {
+    width: 100%;
+    height: 110px;
+}
+#va {
+    background: white;
+    width: 200px;
+    height: 60px;
+    transform: rotate(72deg) translate(19.5em) rotate(-72deg);
+}
+#dongguri-img {
+    height: auto;
+}
+.header {
+    font-size: 48px;
+    background: white;
+    text-align: center;
+}
+.name {
+    margin-bottom: 20px;
+}
+p.small {
+    font-size: 14px;
+}
+.small.deg0 { 
+    transform: translate(285px); 
+} 
+.small.deg36 { 
+    transform: rotate(36deg) translate(285px) rotate(-36deg); 
+}
+.small.deg72 { 
+    transform: rotate(72deg) translate(285px) rotate(-72deg); 
+}
+.small.deg108 { 
+    transform: rotate(108deg) translate(285px) rotate(-108deg); 
+}
+.small.deg144 { 
+    transform: rotate(144deg) translate(285px) rotate(-144deg); 
+}
+.small.deg180 { 
+    transform: rotate(180deg) translate(285px) rotate(-180deg); 
+}
+.small.deg216 { 
+    transform: rotate(216deg) translate(280px) rotate(-216deg); 
+}
+.small.deg252 { 
+    transform: rotate(252deg) translate(280px) rotate(-252deg); 
+}
+.small.deg288 { 
+    transform: rotate(288deg) translate(280px) rotate(-288deg); 
+}
+.small.deg324 { 
+    transform: rotate(324deg) translate(280px) rotate(-324deg); 
+}
+.small.deg360 { 
+    transform: rotate(360deg) translate(280px) rotate(-360deg); 
+}
+
+/* Dongguri style */
+#dongguri-container {
+    background: white;
+    text-align: center;
+    margin: -95px 0 0 -45px;
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
